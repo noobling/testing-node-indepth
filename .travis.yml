@@ -1,3 +1,5 @@
+before_script:
+  - psql -c 'create database testing_node_indepth_test;' -U postgres
 language:
 - node_js
 node_js:
@@ -5,3 +7,5 @@ node_js:
 env:
   global:
   - NODE_ENV=test
+services:
+
